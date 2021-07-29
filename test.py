@@ -8,7 +8,7 @@ import cv2
 from gevent import monkey
 monkey.patch_all()
 import tensorflow as tf
-
+#jiangxzh
 PATH_TO_FROZEN_GRAPH = "/home/aiserver/muke/dataset/fddb/tfmodels/frozen_inference_graph.pb"
 PATH_TO_LABELS = "/home/aiserver/muke/models/research/object_detection/data/face_label_map.pbtxt"
 IMAGE_SIZE = (256, 256)
