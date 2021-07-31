@@ -8,6 +8,6 @@
 
 峰点就是一个其周围所有点的海拔都低于它的点。
 
-![image](https://user-images.githubusercontent.com/77604891/127731584-f75c4bc8-1365-473e-a881-902e475c8d5d.png)
+![image](https://user-images.githubusercontent.com/77604891/127731645-1f1ad854-2283-40c1-a820-d278f877e355.png)
 
 现在我们要做的就是分析来自地图上的海拔数据，以确定地形中峰点的数目和位置。
