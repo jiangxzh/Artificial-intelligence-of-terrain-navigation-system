@@ -32,7 +32,7 @@ int main(void){
 		exit(1);
 	}
 	//从数据文件读取数据到二维数组
-	for(int i=0; i<nrows-1; i++){
+	for(int i=0; i<nrows; i++){
 		for(int j=0;j<ncols; j++){
 			file>>map[i][j];
 		}
