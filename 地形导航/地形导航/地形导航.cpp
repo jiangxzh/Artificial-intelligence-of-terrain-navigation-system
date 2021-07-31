@@ -3,18 +3,19 @@
 #include <string>
 #include <Windows.h>
 
+#define N 64
 using namespace std;
 
 bool isPeak(int grid[64][64], int r , int c);
 
 int main(void){
 	int nrows,ncols; //定义行数和列数
-	int map[64][64];
+	int map[N][N];
 
 	string filename; //定义文件名
 	ifstream file;
 
-	cout<<"请输入文件名: \n";
+	cout<<"请输入文件名: ";
 	cin>>filename;
 	file.open(filename.c_str());
 
@@ -26,7 +27,7 @@ int main(void){
 
 	file>>nrows>>ncols; //输出行数,和列数
 
-	if(nrows>64 || ncols>64){
+	if(nrows>N || ncols>N){
 		cout<<"网格太大,调整程序.\n";
 		system("pause");
 		exit(1);
@@ -52,7 +53,7 @@ int main(void){
 	return 0;
 }
 
-bool isPeak(int grid[64][64], int r , int c){
+bool isPeak(int grid[N][N], int r , int c){
 	if((grid[r][c]>grid[r-1][c]&&
 		grid[r][c]>grid[r+1][c]&&
 		grid[r][c]>grid[r][c-1]&&
